@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillCraft Technology</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    line-height:1.6;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background: whitesmoke;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    color:black;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    transition:0.3s;
+    font-weight:bold
+}
+
+nav ul li a:hover{
+    color:burlywood;
+}
+
+/* Home */
+
+#home{
+    height:100vh;
+    background:linear-gradient(135deg,#0a192f,#112240);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-content h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    color:#ccd6f6;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+    background:#64ffda;
+    color:#0a192f;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn-secondary{
+    border:2px solid #64ffda;
+    color:#64ffda;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* About */
+
+#about{
+    padding:100px 50px;
+    background:#f8fafc;
+    text-align:center;
+}
+
+#about h2{
+    font-size:45px;
+    margin-bottom:25px;
+    color:#0a192f;
+}
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    color:#475569;
+}
+
+/* Services */
+
+#services{
+    padding:100px 50px;
+    background:#eef2ff;
+    text-align:center;
+}
+
+#services h2{
+    font-size:45px;
+    margin-bottom:50px;
+    color:#0a192f;
+}
+
+.services-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.service-card{
+    background:white;
+    width:320px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    color:#0a192f;
+}
+
+.service-card p{
+    color:#64748b;
+}
+
+.service-card a{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+/* Contact */
+
+#contact{
+    padding:100px 20px;
+    background:#f1f5f9;
+}
+
+.contact-container{
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info{
+    flex:1;
+    background:#0a192f;
+    color:white;
+    padding:40px;
+}
+
+.contact-info h2{
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+}
+
+.contact-form{
+    flex:1;
+    padding:40px;
+}
+
+.contact-form h2{
+    margin-bottom:20px;
+}
+
+.contact-form label{
+    display:block;
+    margin-top:15px;
+    font-weight:600;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.contact-form button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:#0a192f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .contact-container{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+ <div class="logo">🖥️ SkillCraft</div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Our Services.html">Services</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <div class="hero-content">
+        <h1>Welcome to Responsive-Landing-Page</h1>
+
+        <p>
+            We deliver innovative web applications, cloud solutions,
+            and digital transformation services that help businesses
+            grow faster and achieve lasting success.
+        </p>
+
+
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2026 TechNova Solutions. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

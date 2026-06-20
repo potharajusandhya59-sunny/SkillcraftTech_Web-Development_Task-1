@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+#contact{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.contact-container{
+    background:white;
+    width:900px;
+    max-width:100%;
+    border-radius:15px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.contact-info{
+    flex:1;
+    background:lightgrey;
+    color:black;
+    padding:40px;
+}
+
+.contact-info h2{
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+    line-height:1.7;
+}
+
+.contact-form{
+    flex:1;
+    padding:40px;
+}
+
+.contact-form h2{
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+.contact-form label{
+    display:block;
+    margin-top:15px;
+    font-weight:600;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact-form button{
+    margin-top:20px;
+    width:100%;
+    padding:14px;
+    background:lightgrey;
+    color:black;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background: black;
+    color: white;
+}
+
+@media(max-width:768px){
+
+    .contact-container{
+        flex-direction:column;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<section id="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+
+            <p>
+                We'd love to hear from you. Whether you have a question
+                about our services, pricing, or anything else, our team
+                is ready to answer all your questions.
+            </p>
+
+            <p><strong>Email:</strong> contact@webconnect.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Location:</strong> Hyderabad, India</p>
+        </div>
+
+        <div class="contact-form">
+
+            <h2>Contact Us</h2>
+
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Enter subject">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

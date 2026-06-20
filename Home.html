@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebConnect</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home{
+    height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:35px;
+    color:#dbeafe;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+    text-decoration:none;
+    background:#3b82f6;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    background:#2563eb;
+}
+
+.btn-secondary{
+    text-decoration:none;
+    border:2px solid white;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:#0f172a;
+}
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<section id="home">
+    <div class="hero-content">
+        <h1>Transforming Ideas Into Digital Solutions</h1>
+
+        <p>
+            We build modern, responsive, and user-friendly web applications
+            that help businesses streamline operations, improve customer
+            engagement, and accelerate growth in the digital era.
+        </p>
+
+        <div class="buttons">
+            <a href="https://www.google.com/chrome/" class="btn-primary" target="_blank">Explore More</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web" class="btn-secondary" target="_blank">Learn More</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

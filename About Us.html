@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+#about{
+    min-height:100vh;
+    background:linear-gradient(135deg,#1e293b,#334155);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.about-container{
+    max-width:900px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:50px;
+    border-radius:15px;
+    text-align:center;
+    color:white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.about-container h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.about-container p{
+    font-size:20px;
+    line-height:1.8;
+    color:#e2e8f0;
+}
+
+.highlight{
+    color:#38bdf8;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .about-container{
+        padding:30px;
+    }
+
+    .about-container h1{
+        font-size:36px;
+    }
+
+    .about-container p{
+        font-size:18px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<section id="about">
+    <div class="about-container">
+        <h1>About Us</h1>
+
+        <p>
+            At <span class="highlight">WebConnect</span>, we are passionate about
+            creating innovative digital solutions that empower businesses and
+            individuals. Our mission is to deliver high-quality web applications
+            that are responsive, secure, and user-friendly.
+        </p>
+
+        <br>
+
+        <p>
+            With a focus on modern technologies and customer satisfaction,
+            we help organizations transform their ideas into successful
+            digital experiences while driving growth and innovation.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
